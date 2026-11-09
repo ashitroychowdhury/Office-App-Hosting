@@ -1,0 +1,18 @@
+{
+  "name": "NTPC Simhadri — Area Owner Geotag",
+  "short_name": "Area Owner",
+  "description": "GPS identification of 360 custodial plant assets at NTPC Simhadri, with area-owner mapping and point-in-polygon 'Where am I?' lookup.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1f3d7a",
+  "theme_color": "#1f3d7a",
+  "lang": "en",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-192-maskable.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
