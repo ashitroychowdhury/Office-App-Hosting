@@ -1,5 +1,5 @@
 /* NTPC Simhadri Area Owner Geotag — offline service worker */
-const CACHE = 'area-owner-v2';
+const CACHE = 'area-owner-v5';
 const CORE = [
   './',
   './index.html',
