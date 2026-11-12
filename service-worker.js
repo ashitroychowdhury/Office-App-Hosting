@@ -1,8 +1,9 @@
 /* NTPC Simhadri Area Owner Geotag — offline service worker */
-const CACHE = 'area-owner-v5';
+const CACHE = 'area-owner-v7';
 const CORE = [
   './',
   './index.html',
+  './app.js',
   './manifest.webmanifest',
   './icon-180.png',
   './icon-192.png',
@@ -53,7 +54,7 @@ self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(req).then(hit => hit || fetch(req).then(res => {
       try {
-        if (res && res.status === 200 && (url.origin === location.origin || /cdnjs\.cloudflare\.com/.test(url.hostname))) {
+        if (res && res.status === 200 && (url.origin === location.origin || /cdnjs\.cloudflare\.com|gstatic\.com/.test(url.hostname))) {
           const copy = res.clone();
           caches.open(CACHE).then(c => c.put(req, copy));
         }
